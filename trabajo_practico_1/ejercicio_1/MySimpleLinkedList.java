@@ -49,6 +49,14 @@ public class MySimpleLinkedList<T> {
 	
 	@Override
 	public String toString() {
-		return "MySimpleLinkedList [first=" + first + "]";
+		String result="";
+		Node<T> aux = this.first;
+		for(int i=0;i<this.size;i++) {
+			result+= "["+i+"] =>"+aux.getInfo()+ "\n";
+			if(aux.getNext()!=null) {
+				aux=aux.getNext();
+			}
+		}
+		return result;
 	}
 }

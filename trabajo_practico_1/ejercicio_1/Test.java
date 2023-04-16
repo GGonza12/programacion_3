@@ -19,10 +19,11 @@ public class Test {
 		lista1.insertFront(n4);
 		System.out.println(lista1.get(2));
 		System.out.println(lista1.size());
+		System.out.println(lista1);
 		System.out.println(lista1.extractFront());
 		System.out.println(lista1.get(0));
 		System.out.println(lista1.size());
-		
+		System.out.println(lista1);
 		
 		
 	}

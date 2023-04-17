@@ -35,5 +35,13 @@ public class Node<T> {
 	public String toString() {
 		return "Node [info=" + info + "]";
 	}
+
+	public boolean equals(Object obj) {
+		Node<T> node = (Node<T>) obj;
+		//System.out.println(node.getInfo());
+		//System.out.println(this.getInfo());
+		return this.info==node.getInfo();
+	}
+	
 	
 }

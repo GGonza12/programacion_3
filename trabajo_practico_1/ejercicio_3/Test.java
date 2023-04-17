@@ -13,6 +13,9 @@ public class Test {
 		pilaTest.push("cuarto dato");
 		pilaTest.reverse();
 		System.out.println(pilaTest);
+		System.out.println(pilaTest.pop()); 
+		System.out.println(pilaTest);
 	}
+	
 
 }

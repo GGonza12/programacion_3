@@ -1,7 +1,7 @@
 package ejercicio_5;
 
 import ejercicio_1.Node;
-import ejercicio_4.LinkedList;
+
 
 public class Test {
 
@@ -12,7 +12,7 @@ public class Test {
 		lista1.insertFront("testeo 2");
 		lista1.insertFront("testeo 3");
 		lista1.insertFront("testeo 4");
-		for(int i:lista1) {
+		for(String i:lista1) {
 			System.out.println(i);
 		}
 	}

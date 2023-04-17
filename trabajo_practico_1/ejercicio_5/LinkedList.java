@@ -1,8 +1,11 @@
 package ejercicio_5;
 
+import java.util.Iterator;
+
+
 import ejercicio_1.Node;
 
-public class LinkedList<T> {
+public class LinkedList<T> implements Iterable<T> {
 	
 	private Node<T> first;
 	private int size;
@@ -60,5 +63,11 @@ public class LinkedList<T> {
 			}
 		}
 		return result;
+	}
+
+	@Override
+	public Iterator<T> iterator() {
+		
+		return new IteradorListaVinculada<T>(this.first);
 	}
 }
